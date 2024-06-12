@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Aplikasi Pengelolaan Barang</h1>
+        <form id="item-form">
+            <input type="text" name="name" id="item-name" placeholder="Nama Barang">
+            <input type="number" name="price" id="item-price" placeholder="Harga Barang" min="0">
+            <input type="number" name="qty" id="item-qty" placeholder="Jumlah Barang" min="0">
+            <button type="submit">Tambah</button>
+            <button type="submit" id="cancel-edit" style="display: none;">Batal</button>
+        </form>        
+        <table>
+            <thead>
+                <tr>
+                    <th>Nama Barang</th>
+                    <th>Harga Barang</th>
+                    <th>Jumlah Barang</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="list-items">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
